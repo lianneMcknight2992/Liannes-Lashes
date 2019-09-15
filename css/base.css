@@ -1,0 +1,184 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+  font-weight: bold;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+  font-size: .95em;
+  text-transform: uppercase;
+}
+.main-nav a {
+	font-size: .95em;
+	text-transform: uppercase;
+  background: linear-gradient(to right, #006175 0%, #00a950 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-nav a:after {
+  display:block;
+  content: '';
+  height:4px;
+  background:#019fb6;
+  transform: scaleX(0.0001);  
+  transition: transform 250ms ease-in-out;
+  box-shadow: inset -40px 0px 30px -25px #fff, inset 40px 0px 30px -25px #fff;
+}
+.main-nav a:hover:after {
+  transform: scaleX(1);
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+	display: block;
+}
+
+
+
+.welcome,.offers{
+	text-align: center;
+	
+}
+
+.welcome, .services{
+	border-bottom : 2px solid #d9e4ea;
+	margin: 2em;
+}
+
+/* ---- Page Elements ---- */
+
+
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
+
+.imagerow {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.imagerow img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.social-networks li {
+  display: inline;
+  list-style-type:none;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row,
+	.column	{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.main-header, .main-nav, .row{
+  display: flex;
+}
+  .main-header{
+    flex-direction:column;
+  align-items:center;
+}
+
+.col{
+  flex: 1;
+  
+}
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row,
+	.column	{
+		width: 80%;
+		max-width: 1150px;
+	}
+  .main-header {
+    flex-direction: row;
+	justify-content:space-between;
+  }
+  .column{
+	  flex-direction: column;
+
+  }
+}

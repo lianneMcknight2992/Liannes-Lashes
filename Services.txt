@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best City Guide</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+	
+	<header class="main-header">
+		<h1 class="name"><a href="#">Lianne's Lashes</a></h1>
+		<ul class="main-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</header><!--/.main-header-->   
+
+	<div class="banner">
+		<img id="mainimage" src="img/main-image.jpg" alt="City">
+	</div><!--/.banner-->
+	
+	<div class="row">		
+		<div class="primary col">
+			<h2>Welcome!</h2>
+				<p>
+				I am a mobile Eyelash technicion, specialising in Semi Permenant eyelash extensions.<br>
+				I am update with the lastest techniques and products used within the industry. I use high quality, well known brands:
+				<ul>
+					<li>Lash Base</li>
+					<li>Lashart</li>
+				</ul>
+		</div><!--/.primary-->
+		
+		<div class="secondary col">
+			<h2>Classic Semi Permenant Eyelash Extensions</h2>
+			    <p>This involves the application of one extension to one natural lash to add fullness and length, but still keeping the natural look.<br>
+					Semi permeant eye lashes are made from soft syntetic hair and should blend seamlessly with your own lashes, resulting in weightless, <br>
+					natural looking lashes that are comfortable to wear.</p>
+		</div><!--/.secondary-->
+	</div>
+	
+	<footer class="main-footer">
+		<span>&copy;2019 mcknil webdesign</span>
+	</footer>
+	
+</body>
+</html>
