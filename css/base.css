@@ -34,8 +34,13 @@ a {
 }
 img {
 	max-width: 100%;
+	height: auto;
 }
 
+#logo  {
+    width: 20%;
+    height:auto;
+}
 
 
 /* ================================= 
@@ -92,6 +97,9 @@ img {
 	text-align: center;
 }
 
+
+
+
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
@@ -108,6 +116,7 @@ img {
 
 .welcome,.offers{
 	text-align: center;
+	padding-bottom: 1em;
 	
 }
 
