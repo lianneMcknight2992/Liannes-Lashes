@@ -5,6 +5,16 @@
 * {
 	box-sizing: border-box;
 }
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
@@ -98,8 +108,6 @@ img {
 }
 
 
-
-
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
@@ -113,6 +121,10 @@ img {
 }
 
 
+.Item{
+	margin: 5px;
+	
+}
 
 .welcome,.offers{
 	text-align: center;
@@ -123,6 +135,7 @@ img {
 .welcome, .services{
 	border-bottom : 2px solid #d9e4ea;
 	margin: 2em;
+	text-align: center;
 }
 
 /* ---- Page Elements ---- */
@@ -157,7 +170,8 @@ img {
 @media (min-width: 769px) {
 	.main-header,
 	.row,
-	.column	{
+	.column,
+	.Gallery	{
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -172,13 +186,16 @@ img {
 
 .col{
   flex: 1;
-  
 }
+ .Item{
+	   width: calc(50% - 2rem);
+ }
+  
 }
 @media (min-width: 1025px) {
 	.main-header,
 	.row,
-	.column	{
+	.column, .Gallery	{
 		width: 80%;
 		max-width: 1150px;
 	}
@@ -186,8 +203,12 @@ img {
     flex-direction: row;
 	justify-content:space-between;
   }
-  .column{
+  .column, .Gallery{
 	  flex-direction: column;
+  } 
+	.Item{
+		 width: calc(25% - 2rem);
+	}
 
   }
 }
