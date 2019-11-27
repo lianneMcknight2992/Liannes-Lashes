@@ -121,10 +121,6 @@ img {
 }
 
 
-.Item{
-	margin: 5px;
-	
-}
 
 .welcome,.offers{
 	text-align: center;
@@ -163,6 +159,19 @@ img {
   list-style-type:none;
 }
 
+/* ---- Gallery ---*/
+
+.Gallery img {
+	transition: 1s;
+	margin: 10px;
+	
+}
+
+.Gallery img:hover{
+	filter:greyscale(100%);
+	transform: scale(1.1);
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -181,7 +190,7 @@ img {
 }
   .main-header{
     flex-direction:column;
-  align-items:center;
+   align-items:center;
 }
 
 .col{
